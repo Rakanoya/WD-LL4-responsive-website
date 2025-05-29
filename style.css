@@ -1,0 +1,210 @@
+/* Basic reset for margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set the main font and background for the whole page */
+body {
+  font-family: 'Open Sans', Arial, sans-serif;
+  /* Use a soft green gradient for a sustainability feel */
+  background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically on mobile */
+  align-items: center; /* Center items horizontally */
+  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%); /* Blue gradient */
+  color: #fff;
+  padding: 20px 0 16px 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06); /* Subtle shadow */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+/* Style for the logo image */
+.logo-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Navigation styles */
+nav {
+  width: 100%;
+}
+
+.nav-list {
+  list-style: none; /* Remove bullet points */
+  display: flex;
+  flex-direction: column; /* Stack nav links vertically on mobile */
+  align-items: center;
+  gap: 14px; /* Space between nav items */
+  margin-top: 8px;
+}
+
+.nav-list li a {
+  text-decoration: none; /* Remove underline */
+  color: #fff;
+  font-size: 1.1em;
+  padding: 8px 20px;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.08); /* Slightly see-through background */
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-list li a:hover {
+  background: #fff; /* White background on hover */
+  color: #2563eb; /* Blue text on hover */
+}
+
+/* Desktop styles: show nav links horizontally */
+@media (min-width: 600px) {
+  header {
+    flex-direction: row; /* Place logo and nav side by side */
+    justify-content: space-between;
+    padding: 24px 48px;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .nav-list {
+    flex-direction: row; /* Show nav links horizontally */
+    margin-top: 0;
+  }
+}
+
+/* Use Montserrat font for all headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+
+/* Hero section styles */
+.hero {
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+  background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%); /* Pastel gradient */
+  text-align: center;
+}
+
+.hero-content {
+  background: rgba(255,255,255,0.7); /* Slightly transparent background for readability */
+  padding: 32px 20px;
+  border-radius: 16px; /* Rounded corners */
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06); /* Soft shadow */
+}
+
+.hero h1 {
+  font-size: 2.2em;
+  margin-bottom: 16px;
+  color: #2563eb; /* Blue headline */
+}
+
+.hero p {
+  font-size: 1.2em;
+  color: #333; /* Dark text for readability */
+}
+
+/* CTA (Call to Action) button styles for the hero section */
+.cta-btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 32px;
+  font-size: 1.1em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  color: #1a3a1a; /* Dark green for strong contrast */
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%); /* Green gradient */
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(67,233,123,0.15);
+  transition: background 0.2s, transform 0.2s, color 0.2s;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
+  color: #2563eb; /* Blue on hover for contrast */
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Destination section styles */
+.destinations {
+  padding: 48px 16px;
+  background: #f0fdfa; /* Light background for contrast */
+  text-align: center;
+}
+
+.destinations h2 {
+  font-size: 2em;
+  color: #2563eb;
+  margin-bottom: 32px;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.destination-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  padding: 24px 18px;
+  max-width: 320px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.destination-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(67,233,123,0.15);
+}
+
+.card-img {
+  width: 100%;
+  max-width: 260px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+.destination-card h3 {
+  font-size: 1.3em;
+  color: #43e97b;
+  margin-bottom: 10px;
+}
+
+.destination-card p {
+  color: #333;
+  font-size: 1em;
+}
+
+/* Responsive: show cards in a row on larger screens */
+@media (min-width: 800px) {
+  .card-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
