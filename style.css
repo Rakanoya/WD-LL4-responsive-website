@@ -8,9 +8,9 @@
 /* Set the main font and background for the whole page */
 body {
   font-family: 'Open Sans', Arial, sans-serif;
-  /* Use a soft green gradient for a sustainability feel */
   background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
   min-height: 100vh;
+  color: #1a2a1a; /* Dark text for good contrast */
 }
 
 /* Header styles */
@@ -59,7 +59,7 @@ nav {
   font-size: 1.1em;
   padding: 8px 20px;
   border-radius: 6px;
-  background: rgba(255,255,255,0.08); /* Slightly see-through background */
+  background: rgba(34, 34, 34, 0.12); /* Slightly darker for contrast */
   transition: background 0.2s, color 0.2s;
 }
 
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content {
-  background: rgba(255,255,255,0.7); /* Slightly transparent background for readability */
+  background: rgba(255,255,255,0.85); /* More opaque for better text contrast */
   padding: 32px 20px;
   border-radius: 16px; /* Rounded corners */
   box-shadow: 0 4px 24px rgba(0,0,0,0.06); /* Soft shadow */
@@ -109,12 +109,12 @@ h1, h2, h3, h4, h5, h6 {
 .hero h1 {
   font-size: 2.2em;
   margin-bottom: 16px;
-  color: #2563eb; /* Blue headline */
+  color: #1a2a1a; /* Dark headline for contrast */
 }
 
 .hero p {
   font-size: 1.2em;
-  color: #333; /* Dark text for readability */
+  color: #234c23; /* Dark green for readability */
 }
 
 /* CTA (Call to Action) button styles for the hero section */
@@ -124,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 14px 32px;
   font-size: 1.1em;
   font-family: 'Montserrat', Arial, sans-serif;
-  color: #1a3a1a; /* Dark green for strong contrast */
+  color: #1a2a1a; /* Dark text for strong contrast */
   background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%); /* Green gradient */
   border: none;
   border-radius: 8px;
@@ -136,9 +136,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .cta-btn:hover {
-  background: linear-gradient(90deg, #38f9d7 0%, #43e97b 100%);
-  color: #2563eb; /* Blue on hover for contrast */
-  transform: translateY(-2px) scale(1.04);
+  color: #fff;
+  background: linear-gradient(90deg, #2563eb 0%, #43e97b 100%);
 }
 
 /* Destination section styles */
@@ -192,12 +191,12 @@ h1, h2, h3, h4, h5, h6 {
 
 .destination-card h3 {
   font-size: 1.3em;
-  color: #43e97b;
+  color: #228B22;
   margin-bottom: 10px;
 }
 
 .destination-card p {
-  color: #333;
+  color: #234c23;
   font-size: 1em;
 }
 
@@ -207,4 +206,87 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     justify-content: center;
   }
+}
+
+/* About section styles */
+.about {
+  padding: 48px 16px;
+  background: #e0f7ef;
+  color: #1a2a1a;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2em;
+  color: #2563eb;
+  margin-bottom: 18px;
+}
+
+.about p {
+  font-size: 1.1em;
+  color: #234c23;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Contact section styles */
+.contact {
+  padding: 48px 16px;
+  background: #f9f9f9;
+  color: #1a2a1a;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 2em;
+  color: #2563eb;
+  margin-bottom: 18px;
+}
+
+.contact p {
+  font-size: 1.1em;
+  color: #234c23;
+  margin-bottom: 24px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  color: #1a2a1a;
+  background: #fff;
+  border: 1px solid #b2dfdb;
+  border-radius: 6px;
+  font-size: 1em;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+.contact-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.contact-form button {
+  padding: 12px;
+  color: #1a2a1a;
+  background: linear-gradient(90deg, #43e97b 0%, #38f9d7 100%);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1em;
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.contact-form button:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #2563eb 0%, #43e97b 100%);
 }

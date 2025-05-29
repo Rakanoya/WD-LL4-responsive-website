@@ -24,8 +24,9 @@
     <nav>
       <ul class="nav-list">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#destinations">Destinations</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -43,8 +44,15 @@
   </section>
   <!-- Hero section ends here -->
 
+  <!-- About section starts here -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are dedicated to promoting eco-friendly travel and sustainable living. Our mission is to inspire and guide people to explore the world responsibly, making a positive impact on the environment and local communities.</p>
+  </section>
+  <!-- About section ends here -->
+
   <!-- Destination section starts here -->
-  <section class="destinations">
+  <section id="destinations" class="destinations">
     <h2>Eco-Friendly Destinations</h2>
     <div class="card-container">
       <!-- Card 1 -->
@@ -74,6 +82,19 @@
     </div>
   </section>
   <!-- Destination section ends here -->
+
+  <!-- Contact section starts here -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want to get involved? Reach out to us!</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  <!-- Contact section ends here -->
 
   <script src="script.js"></script>
 </body>
