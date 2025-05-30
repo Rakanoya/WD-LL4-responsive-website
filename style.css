@@ -7,20 +7,21 @@
 
 /* Set the main font and background for the whole page */
 body {
-  font-family: 'Open Sans'  background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+  font-family: 'Open Sans', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7ef 0%, #b2dfdb 100%); /* Soft green/blue gradient */
   min-height: 100vh;
-  color: #1a2a1a; /* Dark text for good contrast */
+  color: #1a2a1a;
 }
 
 /* Header styles */
 header {
-  display: flex; /* Use flexbox for layout */
-  flex-direction: column; /* Stack items vertically on mobile */
-  align-items: center; /* Center items horizontally */
-  background: linear-gradient(90deg, #2563eb 0%, #06b6d4 100%); /* Blue gradient */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(90deg, #2563eb 0%, #43e97b 100%); /* Blue-green gradient for strong contrast */
   color: #fff;
   padding: 20px 0 16px 0;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06); /* Subtle shadow */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
 }
 
 .logo {
@@ -95,7 +96,7 @@ h1, h2, h3, h4, h5, h6 {
   align-items: center; /* Center content vertically */
   justify-content: center; /* Center content horizontally */
   /* Use a beautiful scenery image as the background */
-  background: linear-gradient(rgba(34, 49, 63, 0.4), rgba(67, 233, 123, 0.2)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');
+  background: linear-gradient(rgba(67, 233, 123, 0.7), rgba(56, 249, 215, 0.5)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -103,7 +104,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-content {
-  background: rgba(255,255,255,0.85); /* Keep content readable over the image */
+  background: rgba(255,255,255,0.9); /* More opaque for contrast */
   padding: 32px 20px;
   border-radius: 16px;
   box-shadow: 0 4px 24px rgba(0,0,0,0.06); /* Soft shadow */
@@ -146,7 +147,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Destination section styles */
 .destinations {
   padding: 48px 16px;
-  background: #f0fdfa; /* Light background for contrast */
+  background: #e0f7ef; /* Light green for contrast with hero and header */
   text-align: center;
 }
 
@@ -219,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   max-width: 1000px;
   height: 8px;
-  background: #e0f7ef;
+  background: #b2dfdb;
   border-radius: 6px;
   margin: 12px auto 0 auto;
   overflow: hidden;
@@ -254,7 +255,7 @@ h1, h2, h3, h4, h5, h6 {
 /* About section styles */
 .about {
   padding: 48px 16px;
-  background: #e0f7ef;
+  background: #fff; /* White for strong contrast with other sections */
   color: #1a2a1a;
   text-align: center;
 }
@@ -275,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Contact section styles */
 .contact {
   padding: 48px 16px;
-  background: #f9f9f9;
+  background: #b2dfdb; /* Blue-green for contrast with about and destinations */
   color: #1a2a1a;
   text-align: center;
 }
