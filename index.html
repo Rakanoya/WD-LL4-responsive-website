@@ -79,6 +79,35 @@
         <p>Relax on a pristine beach that is protected and maintained by local conservation efforts for a cleaner
           ocean.</p>
       </div>
+      <!-- Card 4 -->
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80"
+          alt="Mountain Eco Lodge" class="card-img">
+        <h3>Mountain Eco Lodge</h3>
+        <p>Stay in a cozy mountain lodge that uses renewable energy and supports local wildlife conservation.</p>
+      </div>
+      <!-- Card 5 -->
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=600&q=80"
+          alt="Organic Farm Stay" class="card-img">
+        <h3>Organic Farm Stay</h3>
+        <p>Enjoy hands-on experiences at an organic farm, learning about sustainable agriculture and healthy living.</p>
+      </div>
+      <!-- Card 6 -->
+      <div class="destination-card">
+        <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=600&q=80"
+          alt="Rainforest Adventure" class="card-img">
+        <h3>Rainforest Adventure</h3>
+        <p>Explore the wonders of the rainforest with eco-guides who protect and preserve this vital ecosystem.</p>
+      </div>
+    </div>
+    <!-- Scroll hint -->
+    <div style="width:100%;text-align:center;margin-top:12px;color:#2563eb;font-size:1em;">
+      <span style="background:#e0f7ef;padding:6px 16px;border-radius:8px;display:inline-block;">&#8592; Scroll to see more destinations &#8594;</span>
+    </div>
+    <!-- Scrollbar progress bar -->
+    <div class="scroll-progress-bar">
+      <div class="scroll-progress"></div>
     </div>
   </section>
   <!-- Destination section ends here -->
@@ -96,6 +125,18 @@
   </section>
   <!-- Contact section ends here -->
 
+  <script>
+    // Simple scroll progress bar for the destinations section
+    const cardContainer = document.querySelector('.card-container');
+    const progressBar = document.querySelector('.scroll-progress');
+    if (cardContainer && progressBar) {
+      cardContainer.addEventListener('scroll', function () {
+        const maxScroll = cardContainer.scrollWidth - cardContainer.clientWidth;
+        const percent = maxScroll > 0 ? (cardContainer.scrollLeft / maxScroll) * 100 : 0;
+        progressBar.style.width = percent + '%';
+      });
+    }
+  </script>
   <script src="script.js"></script>
 </body>
 
