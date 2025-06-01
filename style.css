@@ -334,3 +334,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   background: linear-gradient(90deg, #2563eb 0%, #43e97b 100%);
 }
+
+/* Footer styles */
+.footer {
+  background: #2563eb;
+  color: #fff;
+  text-align: center;
+  padding: 18px 0;
+  font-size: 1em;
+  margin-top: 32px;
+  letter-spacing: 0.5px;
+}
